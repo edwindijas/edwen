@@ -1,0 +1,53 @@
+{
+  "name": "edwen",
+  "version": "1.0.0",
+  "description": "AI Study assistant",
+  "keywords": [
+    "AI",
+    "study",
+    "app"
+  ],
+  "homepage": "https://github.com/edwindijas/edwen#readme",
+  "bugs": {
+    "url": "https://github.com/edwindijas/edwen/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwindijas/edwen.git"
+  },
+  "license": "MIT",
+  "author": "Edwin Dijas Chiwona",
+  "type": "commonjs",
+  "main": "index.js",
+  "workspaces": [
+    "frontend",
+    "backend",
+    "shared"
+  ],
+  "scripts": {},
+  "devDependencies": {
+    "@eslint-react/eslint-plugin": "^5.7.4",
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@types/node": "^25.9.1",
+    "eslint": "^10.3.0",
+    "eslint-import-resolver-node": "^0.3.10",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-filename-rules": "^1.3.1",
+    "eslint-plugin-import-x": "^4.16.2",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "eslint-plugin-unicorn": "^64.0.0",
+    "globals": "^17.6.0",
+    "prettier": "^3.8.3",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.58.2",
+    "vite": "^8.0.11",
+    "vite-plugin-eslint2": "^5.1.0"
+  },
+  "dependencies": {
+    "immer": "^11.1.8",
+    "zod": "^4.4.3"
+  }
+}

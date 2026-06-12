@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "composite": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "declaration": true,
+    "outDir": "dist",
+    "target": "ES2022",
+    "strict": true,
+    "types": ["node"],
+  }
+}
