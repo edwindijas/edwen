@@ -16,13 +16,13 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@shared/*": ["./packages/shared/src/*"]
+      "@shared/*": ["./shared/src/*"]
     },
     "types": ["@types/node"],
   },
   "references": [
     {
-      "path": "./packages/shared"
+      "path": "./shared"
     }
   ]
 }
