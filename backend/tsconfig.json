@@ -1,0 +1,24 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./build" /* Redirect output structure to the directory. */,
+    "rootDir": "./",
+    "module": "es2022",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "typeRoots": ["node_modules/@types", "@types/node", "./src/types", "@types/pg"],
+    "paths": {
+      "@/src/*": ["./src/*"],
+      "@/features/*": ["./src/features/*"],
+      "@/common/*": ["./src/common/*"],
+      "@/app/*": ["./src/app/*"],
+      "@/utils/*": ["./src/utils/*"],
+      "@/middleware/*": ["./src/middleware/*"]
+    }
+  },
+  "include": ["./src/**/*.ts", "./scripts/**/*.ts", "./tests/**/*.ts", "src/types/index.d.ts", "src/index.d.ts"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"],
+    "transpileOnly": true
+  }
+}
