@@ -7,7 +7,7 @@ import { errorHandler, responseFormatter } from '@/middleware/';
 
 import { CONFIG_ENV_VAR_NAMES } from '../common/const/config';
 
-import { apiRouter } from './router';
+import { appRouter } from './router';
 
 import { getEnvVariable } from '@/utils/env';
 
@@ -24,10 +24,6 @@ app.use(cookieParser());
 app.use(cors(corsOptions));
 
 app.use(responseFormatter);
-app.use(apiRouter);
-
-app.get('/api/health', (req, res) => {
-  res.status(200).json({ status: 'ok' });
-});
+app.use(appRouter);
 
 app.use(errorHandler);

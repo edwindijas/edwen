@@ -1,4 +1,4 @@
-import { arrayToEnum } from '@pack/shared/src/helpers/misc/types';
+import { arrayToEnum } from '@ed-ai/shared/src/types/array';
 
 export const CONFIG_ENV_VAR_NAMES = arrayToEnum([
   'SERVER_PORT',

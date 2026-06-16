@@ -1,3 +1,6 @@
 import Express from 'express';
+import { appRoutes } from './routes';
 
-export const apiRouter = Express();
+export const appRouter = Express();
+
+appRouter.use('/api', appRoutes);

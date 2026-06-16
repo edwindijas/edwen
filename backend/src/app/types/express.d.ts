@@ -14,7 +14,7 @@ declare global {
     }
 
     interface Response {
-      success<T>(data: T): void;
+      success<T>(data: T, statusCode?: number, textResponse: string): void;
       fail(error: ApiError, statusCode?: number): void;
     }
   }
